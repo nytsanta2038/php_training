@@ -1,0 +1,36 @@
+/* Click the link below for custom gradient : */
+
+/* https://mdbootstrap.com/docs/standard/tools/design/gradients/ */
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #85b4ff;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, rgba(133, 180, 255, 0.5), rgba(194, 233, 251, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(133, 180, 255, 0.5), rgba(194, 233, 251, 0.5))
+  }
+
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #85b4ff;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to bottom, rgba(133, 180, 255, 0.5), rgba(194, 233, 251, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 5+ */
+    background: linear-gradient(to bottom, rgba(133, 180, 255, 0.5), rgba(194, 233, 251, 0.5))
+  }
+
+  .gradient-custom2 {
+    /* fallback for old browsers */
+    background: #6a85b6;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 133, 182, 0.5), rgba(186, 200, 224, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 133, 182, 0.5), rgba(186, 200, 224, 0.5))
+  }
