@@ -2,6 +2,10 @@
 
 <?php
 $email = $_POST['email'];
+
+// renvoi true ou false (à ajuster quand il y aura accès à la base de donnée)
+var_dump(mail("$email", "[OCR SQUARE] Mot de passe oublié", "cliquez sur ce lien pour réinitialiser votre mot de passe : [insérer lien]"));
+
 echo '    <body>
 <div class="card">
 <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
