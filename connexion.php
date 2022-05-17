@@ -17,24 +17,28 @@
 <body>
   
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark gradient-custom2">
-      
-    <a class="navbar-brand" href="https://www.aforp.fr/">AFORP</a>
+    <a  href="index.php">
+      <img src="f1.png" width="135" height="40">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">A propos</a>
+          <a class="nav-link" href="notfound.html">A propos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="notfound.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="connexion.php">Se connecter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inscription.php">S'inscrire</a>
         </li>
       </ul>
     </div>
-    <button class="btn mt-2 mt-md-0" href="#">Se connecter</button>
-    <button class="btn mt-2 mt-md-0" href="#">S'inscrire</button>
-
   </nav>
 
 
@@ -46,19 +50,20 @@
             <div class="card-body p-5 text-center">
               <div class="mb-md-3 mt-md-4 pb-5">
 
-                <img class="mb-4" src="tensorflow.png" width="120" height="100">
-                <form>
+              <h2 style="color:#FFFFFF">CONNECTEZ-VOUS</h2>
+              <hr style="color:#FFFFFF">
+                <form action="confirmation_connexion.php" method="post">
                   <div class="form-floating mb-4">
-                    <input type="email" id="Email" class="form-control" placeholder="Mot de passe"/>
+                    <input type="email" id="Email" name="email" class="form-control" placeholder="Mot de passe" required/>
                     <label class="form-label" for="Email">Email</label>
                   </div>
 
                   <div class="form-floating mb-4">
-                    <input type="password" id="Password" class="form-control form-control-lg" placeholder="Mot de passe" />
+                    <input type="password" id="Password" name="password" class="form-control form-control-lg" placeholder="Mot de passe" required/>
                     <label for="Password">Mot de passe</label>
                   </div>
 
-                  <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="form.html">Mot de passe oublié ?</a></p>
+                  <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="oubli_mdp.php">Mot de passe oublié ?</a></p>
 
                   <button class="btn btn-outline-light btn-lg px-4" type="submit">Se connecter</button>
                 </form>
@@ -66,7 +71,7 @@
               </div>
 
               <div>
-                <p class="mb-0 text-white">Vous n'avez pas encore de compte ? <a href="#!" class="text-white-50 fw-bold">S'inscrire</a></p>
+                <p class="mb-0 text-white">Vous n'avez pas encore de compte ? <a href="inscription.php" class="text-white-50 fw-bold">S'inscrire</a></p>
               </div>
             </div>
           </div>

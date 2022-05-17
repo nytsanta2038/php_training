@@ -18,24 +18,28 @@
   
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark gradient-custom2">
       
-    <a class="navbar-brand" href="https://www.aforp.fr/">AFORP</a>
+    <a  href="index.php">
+      <img src="f1.png" width="135" height="40">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">A propos</a>
+          <a class="nav-link" href="notfound.html">A propos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="notfound.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="connexion.php">Se connecter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inscription.php">S'inscrire</a>
         </li>
       </ul>
     </div>
-    <button class="btn mt-2 mt-md-0" href="#">Se connecter</button>
-    <button class="btn mt-2 mt-md-0" href="#">S'inscrire</button>
-
-  
   </nav>
 
 
@@ -46,17 +50,36 @@
         <div class="card bg-dark" style="border-radius: 1rem; box-shadow: 0 0 1.5em rgb(80, 80, 68);" >
           <div class="card-body p-5 text-center">
             <div class="mb-md-3 mt-md-4 pb-5">
-              <a  href="page-accueil.html">
-                <img class="mb-4" src="tensorflow.png" width="120" height="100"> 
-              </a>
-              <form>
+
+              <h2 style="color:#FFFFFF">CRÉER UN COMPTE</h2>
+              <hr style="color:#FFFFFF">
+
+              <form action="confirmation_inscription.php" method ="post">
                 <div class="form-floating mb-4">
-                  <input type="email" id="Email" class="form-control" placeholder="Email"/>
-                  <label class="form-label" for="Email">Email</label>
+                  <input type="text" id="prenom" name="firstname" class="form-control" placeholder="prenom" required/>
+                  <label class="form-label" for="prenom">prenom</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="text" id="nom" name="lastname" class="form-control" placeholder="nom" required/>
+                  <label class="form-label" for="nom">nom</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="email" id="Email" name="email" class="form-control" placeholder="Email" required/>
+                  <label class="form-label" for="Email">email</label>
+                </div>
+
+                <div class="form-floating mb-4">
+                  <input type="password" id="mot de passe" name="password" class="form-control" placeholder="mot de passe" required/>
+                  <label class="form-label" for="mot de passe">mot de passe</label>
                 </div>
 
                 <button class="btn btn-outline-light btn-lg px-4" type="submit">Envoyer</button>
               </form>
+            </div>
+            <div>
+                <p class="mb-0 text-white">Vous avez déjà un compte ? <a href="connexion.php" class="text-white-50 fw-bold">Se connecter</a></p>
             </div>
           </div>
         </div>
