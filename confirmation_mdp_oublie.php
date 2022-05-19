@@ -28,7 +28,9 @@ $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 $headers .= 'From: OCRSQUARE <etglsquare@gmail.com>' . "\r\n";
 
 // renvoi true ou false (à ajuster quand il y aura accès à la base de donnée)
+ob_start();
 var_dump(mail("$email", $subject, $message, $headers));
+$output = ob_get_clean();
 
 echo '    <body>
 <div class="card">
