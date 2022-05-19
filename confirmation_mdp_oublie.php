@@ -3,8 +3,32 @@
 <?php
 $email = $_POST['email'];
 
+// subject
+$subject = '[OCRSQUARE] Demande de réinitialisation de mot de passe';
+
+// message
+$message = '
+<html>
+<head>
+  <title>Bonjour</title>
+</head>
+<body>
+<p>Bonjour,</p>
+<p> Nous avons reçu une demande de réinitialisation de mot de passe. Pour le changer, cliquez <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ici</a>.</p>
+<p>Merci,</p>
+<p>L\'équipe OCRSQUARE<p>
+  <img src="images/logo_principal.JPG" width="175" height="100">
+</body>
+</html>
+';
+
+// To send HTML mail, the Content-type header must be set
+$headers  = 'MIME-Version: 1.0' . "\r\n";
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$headers .= 'From: OCRSQUARE <etglsquare@gmail.com>' . "\r\n";
+
 // renvoi true ou false (à ajuster quand il y aura accès à la base de donnée)
-var_dump(mail("$email", "[OCR SQUARE] Mot de passe oublié", "cliquez sur ce lien pour réinitialiser votre mot de passe : [insérer lien]"));
+var_dump(mail("$email", $subject, $message, $headers));
 
 echo '    <body>
 <div class="card">
