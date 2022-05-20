@@ -14,8 +14,8 @@ $message = '
   <title>Bonjour</title>
 </head>
 <body>
-<p>Bonjour ' + $firstname + ',</p>
-<p> Félicitations ! Votre compte a bien été crée, pour confirmer votre inscription veuillez cliquez <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ici</a>.</p>
+<p>Bonjour ' . $firstname . ',</p>
+<p> Félicitations ! Votre compte a bien été crée, pour confirmer votre inscription veuillez cliquer <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ici</a>.</p>
 <p>Merci,</p>
 <p>L\'équipe OCRSQUARE<p>
   <!--<img src="images/logo_principal.JPG" width="175" height="100">-->
