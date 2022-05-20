@@ -2,9 +2,10 @@
 
 <?php
 $email = $_POST['email'];
+$firstname = $_POST['firstname'];
 
 // subject
-$subject = '[OCRSQUARE] Demande de réinitialisation de mot de passe';
+$subject = '[OCRSQUARE] Confirmation inscription';
 
 // message
 $message = '
@@ -13,8 +14,8 @@ $message = '
   <title>Bonjour</title>
 </head>
 <body>
-<p>Bonjour,</p>
-<p> Nous avons reçu une demande de réinitialisation de mot de passe. Pour le changer, cliquez <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ici</a>.</p>
+<p>Bonjour ' + $firstname + ',</p>
+<p> Félicitations ! Votre compte a bien été crée, pour confirmer votre inscription veuillez cliquez <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ici</a>.</p>
 <p>Merci,</p>
 <p>L\'équipe OCRSQUARE<p>
   <!--<img src="images/logo_principal.JPG" width="175" height="100">-->
@@ -38,7 +39,7 @@ echo '    <body>
 <i class="checkmark">✓</i>
 </div>
 <h1>Success</h1> ';
-echo "<p>Votre demande de réinitialisation de mot de passe a bien été prise en compte<br/> un lien a été envoyé à l'adresse suivante : <h4>", $email, "</h4></p> </div></body>";
+echo "<p>Votre inscription a bien été prise en compte<br/> un lien de confirmation a été envoyé à l'adresse suivante : <h4>", $email, "</h4></p> </div></body>";
 ?>
 
 <html>
